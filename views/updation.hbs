@@ -1,0 +1,46 @@
+<html>
+<head>
+  {{>head}}
+
+  <style>
+ .vl {
+  border-left: 4px solid white;
+  height: 45px;
+ }
+</style>
+ </head>
+ <body>
+
+<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+<a class="navbar-brand" href="#"> &nbsp;<font face="comic sans ms"> Sudhir Tour Packages </font> &nbsp; </a>
+ <div class="vl"></div> &nbsp; &nbsp; &nbsp;
+ <ul class="navbar-nav"> 
+   <li class="nav-item">
+   <a class="nav-link text-light" href="../"> Home </a> 
+   </li>
+   <li class="nav-item">
+    <a class="nav-link text-light" href="../trip"> Trip Details </a> 
+   </li>
+   <li class="nav-item">
+    <a class="nav-link text-light" href="../about"> About Packages </a> 
+   </li>
+   <li class="nav-item"> 
+    <a class="nav-link text-light" href="../cancel"> Cancelled Trip </a> 
+   </li>
+   <li class="nav-item"> 
+    <a class="nav-link text-light bg-danger" href="../update"> Updated Trip </a> 
+   </li>
+ </ul>
+ </nav>
+    <div class="container"> <br>
+        {{> header}}
+        <font face="comic sans ms">
+        <h4> <br> <br>Seeing the Contents of Updated Page.</h4>
+        <h1 class="text-danger">"This page is added after Deployment"</h1> <br> <br> <br> <br> <br>
+        </font>
+        {{>footer}}
+
+    </div>
+
+ </body>
+</html>
